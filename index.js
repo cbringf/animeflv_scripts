@@ -1,5 +1,3 @@
-// https://www3.animeflv.net/ver/one-piece-tv-979
-
 function getPageLinks(url) {
 	return new Promise((resolve, reject) => {
 		fetch(url)
@@ -54,6 +52,7 @@ function download(linksText) {
 	window.URL.revokeObjectURL(url);
 }
 
+// Main function
 async function getDownloadLinks(urlPattern, start, count) {
 	let linksTable = {
 		description: `Download links from ${start} to ${start + count - 1}`,
