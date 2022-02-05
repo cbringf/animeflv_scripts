@@ -1,3 +1,5 @@
+// main script
+
 function getPageLinks(url) {
 	return new Promise((resolve, reject) => {
 		fetch(url)
